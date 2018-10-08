@@ -18,10 +18,12 @@ module.exports = {
     // Cash Drawer
     CD_KICK_2  : new Buffer([0x1b, 0x70, 0x00]),      // Sends a pulse to pin 2 []
     CD_KICK_5  : new Buffer([0x1b, 0x70, 0x01]),      // Sends a pulse to pin 5 []
+    CD_CHECK   : new Buffer([0x1d, 0x72, 0x02]),      // Checks for state of pin 3
 
     // Paper
     PAPER_FULL_CUT  : new Buffer([0x1d, 0x56, 0x00]), // Full cut paper
     PAPER_PART_CUT  : new Buffer([0x1d, 0x56, 0x01]), // Partial cut paper
+    PAPER_CHECK     : new Buffer([0x1d, 0x56, 0x01]), // Check for state of paper sensor
 
     // Text format
     TXT_NORMAL      : new Buffer([0x1b, 0x21, 0x00]), // Normal text
